@@ -14,10 +14,8 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
 
 ]
-authors = [
-    { name = "Chad Lowe", email = "pfmsoft.dev@gmail.com" },
-]
-name = "pfmsoft-snippets-indexed-string"
+authors = [{ name = "Chad Lowe", email = "pfmsoft.dev@gmail.com" }]
+name = "pfmsoft.snippets.indexed-string"
 readme = "README.md"
 requires-python = ">=3.13"
 license = { file = "LICENSE" }

@@ -5,7 +5,7 @@ from importlib import resources
 import pytest
 from tests.resources import RESOURCES_ANCHOR
 from typer.testing import CliRunner
-from pfmsoft_snippets_indexed_string.cli.main_typer import app
+from pfmsoft.snippets.indexed_string.cli.main_typer import app
 
 DATA_FILE_NAME = "ipsum_1.txt"
 DATA_FILE_PATH = "files_1"

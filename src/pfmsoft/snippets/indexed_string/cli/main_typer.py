@@ -6,7 +6,7 @@ from time import perf_counter_ns
 from typing import Annotated
 
 import typer
-from pfmsoft_snippets_indexed_string.snippets.hash.file_hash import hash_file
+from pfmsoft.snippets.indexed_string.snippets.hash.file_hash import hash_file
 
 
 def default_options(
