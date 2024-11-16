@@ -1,5 +1,5 @@
 [build-system]
-requires = ["flit_core >=3.4,<4"]
+requires = ["flit_core >=3.10,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
@@ -23,10 +23,10 @@ dynamic = ["version", "description"]
 # https://chrisholdgraf.com/blog/2022/install-github-from-pyproject/
 # https://peps.python.org/pep-0508/#examples
 # "pfmsoft-snippets@git+https://github.com/donalchilde/pfmsoft-snippets@0.0.1"
-dependencies = ["typer"]
+# dependencies = ["typer"]
 
 [project.scripts]
-pfmsoft-snippets-indexed-string_typer = "pfmsoft_snippets_indexed_string.cli.main_typer:app"
+# pfmsoft-snippets-indexed-string_typer = "pfmsoft_snippets_indexed_string.cli.main_typer:app"
 
 [project.urls]
 Documentation = "https://github.com/DonalChilde/pfmsoft-snippets-indexed-string#readme"
