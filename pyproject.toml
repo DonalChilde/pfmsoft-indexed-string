@@ -15,24 +15,23 @@ classifiers = [
 
 ]
 authors = [{ name = "Chad Lowe", email = "pfmsoft.dev@gmail.com" }]
-name = "pfmsoft.snippets.indexed-string"
+name = "pfmsoft.indexed-string"
 readme = "README.md"
 requires-python = ">=3.13"
 license = { file = "LICENSE" }
 dynamic = ["version", "description"]
 # https://chrisholdgraf.com/blog/2022/install-github-from-pyproject/
 # https://peps.python.org/pep-0508/#examples
-# "pfmsoft-snippets@git+https://github.com/donalchilde/pfmsoft-snippets@0.0.1"
 # dependencies = ["typer"]
 
 [project.scripts]
-# pfmsoft-snippets-indexed-string_typer = "pfmsoft_snippets_indexed_string.cli.main_typer:app"
+# pfmsoft-indexed-string_typer = "pfmsoft_indexed_string.cli.main_typer:app"
 
 [project.urls]
-Documentation = "https://github.com/DonalChilde/pfmsoft-snippets-indexed-string#readme"
-# Documentation_rtd = "https://pfmsoft-snippets-indexed-string.readthedocs.io"
-Issues = "https://github.com/DonalChilde/pfmsoft-snippets-indexed-string/issues"
-Source = "https://github.com/DonalChilde/pfmsoft-snippets-indexed-string"
+Documentation = "https://github.com/DonalChilde/pfmsoft-indexed-string#readme"
+# Documentation_rtd = "https://pfmsoft-indexed-string.readthedocs.io"
+Issues = "https://github.com/DonalChilde/pfmsoft-indexed-string/issues"
+Source = "https://github.com/DonalChilde/pfmsoft-indexed-string"
 
 
 [project.optional-dependencies]
@@ -84,7 +83,7 @@ parallel = true
 
 [tool.scriv]
 #version = "literal: pyproject.toml: project.version"
-version = "literal: src/pfmsoft_snippets_indexed_string/__init__.py: __version__"
+version = "literal: src/pfmsoft_indexed_string/__init__.py: __version__"
 format = "md"
 md_header_level = "2"
 entry_title_template = "file: changelog.d/templates/entry_title_template.md.j2"

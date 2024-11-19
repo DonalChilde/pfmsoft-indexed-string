@@ -1,6 +1,6 @@
 from typing import Callable, Sequence
 
-from pfmsoft.snippets.indexed_string.model import IndexedStringProtocol
+from pfmsoft.indexed_string.model import IndexedStringProtocol
 
 
 class SkipTillFirstMatch:

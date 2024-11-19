@@ -1,5 +1,5 @@
-.. typer:: pfmsoft_snippets_indexed_string.cli.main_typer:app
-   :prog: pfmsoft-snippets-indexed-string
+.. typer:: pfmsoft_indexed_string.cli.main_typer:app
+   :prog: pfmsoft-indexed-string
    :width: 100
    :show-nested:
    :make-sections:

@@ -1,4 +1,4 @@
-# Welcome to Pfmsoft Snippets Indexed String's documentation
+# Welcome to Pfmsoft Indexed String's documentation
 
 ```{toctree}
 ---

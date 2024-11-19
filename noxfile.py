@@ -4,7 +4,7 @@ from pathlib import Path
 
 import nox
 
-package = "pfmsoft_snippets_indexed_string"
+package = "pfmsoft_indexed_string"
 github_user = "DonalChilde"
 # python_versions = ["3.10", "3.9", "3.8", "3.7"]
 

@@ -1,4 +1,4 @@
-"""Top-level package for pfmsoft_snippets_indexed_string."""
+"""Top-level package for pfmsoft_indexed_string."""
 
 __author__ = "Chad Lowe"
 __email__ = "pfmsoft.dev@gmail.com"

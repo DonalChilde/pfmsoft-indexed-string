@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import Callable, Iterable, Iterator
 
-from pfmsoft.snippets.indexed_string.model import IndexedString, IndexedStringProtocol
+from pfmsoft.indexed_string.model import IndexedString, IndexedStringProtocol
 
 
 def index_strings(
