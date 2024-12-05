@@ -1,19 +1,18 @@
-from typing import Callable, Sequence
+"""Filters for IndexedStrings."""
+
+from collections.abc import Callable, Sequence
 
 from pfmsoft.indexed_string.model import IndexedStringProtocol
 
 
 class SkipTillFirstMatch:
-    """
-    Skip until first match found.
+    """Skip until first match found."""
 
-    """
-
-    def __init__(self, match_test: Callable[[IndexedStringProtocol], bool]) -> None:
+    def __init__(self, match_test: Callable[[IndexedStringProtocol], bool]) -> None:  # noqa: D107
         self.match_test = match_test
         self.procede = False
 
-    def __call__(self, indexed_string: IndexedStringProtocol) -> bool:
+    def __call__(self, indexed_string: IndexedStringProtocol) -> bool:  # noqa: D102
         if self.procede:
             return True
         if self.match_test(indexed_string):
@@ -25,13 +24,13 @@ class SkipTillFirstMatch:
 class MultipleTests:
     """Test for multiple conditions."""
 
-    def __init__(
+    def __init__(  # noqa: D107
         self, testers: Sequence[Callable[[IndexedStringProtocol], bool]]
     ) -> None:
         self.testers: Sequence[Callable[[IndexedStringProtocol], bool]] = list(testers)
 
-    def __call__(self, indexed_string: IndexedStringProtocol) -> bool:
-        return all((tester(indexed_string) for tester in self.testers))
+    def __call__(self, indexed_string: IndexedStringProtocol) -> bool:  # noqa: D102
+        return all(tester(indexed_string) for tester in self.testers)
 
 
 def is_numeric(indexed_string: IndexedStringProtocol) -> bool:
@@ -40,7 +39,7 @@ def is_numeric(indexed_string: IndexedStringProtocol) -> bool:
 
 
 def is_whitespace(indexed_string: IndexedStringProtocol) -> bool:
-    """String contains only white space"""
+    """String contains only white space."""
     return indexed_string.txt.isspace()
 
 

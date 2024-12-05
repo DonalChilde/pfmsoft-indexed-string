@@ -34,35 +34,6 @@ Issues = "https://github.com/DonalChilde/pfmsoft-indexed-string/issues"
 Source = "https://github.com/DonalChilde/pfmsoft-indexed-string"
 
 
-# [project.optional-dependencies]
-# dev = [
-
-#     # Automation
-#     "nox",
-#     "pre-commit",
-
-#     # Linting and Formatting
-#     "ruff",
-#     "mypy",
-
-#     # Tools
-#     "pysnooper",
-#     "scriv",
-# ]
-
-# doc = [
-#     # Documentation
-#     "Sphinx",
-#     "sphinx-autobuild",
-#     "sphinx-autodoc-typehints",
-#     "sphinx_rtd_theme",
-#     "myst-parser",
-#     "sphinxcontrib-typer",
-# ]
-# vscode = ["esbonio", "rst2html", "rstcheck"]
-# testing = ["pytest", "coverage[toml]", "pytest-cov"]
-
-
 [dependency-groups]
 dev = [
 
