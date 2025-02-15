@@ -31,6 +31,8 @@ def index_strings(
         if string_filter is not None:
             if string_filter(indexed_string):
                 yield indexed_string
+            else:
+                continue
         yield indexed_string
 
 
@@ -55,6 +57,8 @@ def index_lines_in_file(
             if string_filter is not None:
                 if string_filter(indexed_string):
                     yield indexed_string
+                else:
+                    continue
             yield indexed_string
 
 
